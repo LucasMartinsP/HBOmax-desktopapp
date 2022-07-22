@@ -1,0 +1,36 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder"
+  },
+
+    "build": {
+      "appId": "Hbo Max",
+      "win": {
+        "target": [
+          "nsis"
+        ],
+        "icon": "hbo.ico"
+      },
+      "nsis": {
+        "oneClick": true,
+        "installerIcon": "hbo.ico",
+        "uninstallerIcon": "hbo.ico",
+        "uninstallDisplayName": "hbo-unistaller",
+        "license": "license.md",
+        "allowToChangeInstallationDirectory": true
+      }
+    },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.9",
+    "electron-builder": "^23.1.0"
+  }
+}
